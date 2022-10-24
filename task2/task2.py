@@ -1,6 +1,7 @@
 from math import sqrt
 import os
 
+
 # Функция создания пирамиды
 def triangle(a: int):
     rows = a + 1  # Число рядов
@@ -32,6 +33,7 @@ def saveHistToFile(hist: list, file_path: str):
         if i != len(hist) - 1:
             file.write(';')
     file.close()
+
 
 # Функция чтения гистограммы из файл (строки будут конвертированы в числа)
 def readHistFromFile(file_path: str) -> list:
